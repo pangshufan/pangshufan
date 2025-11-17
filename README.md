@@ -80,7 +80,7 @@ I specialize in solving complex, multi-layer problems in constrained, high-press
 ## 🛠️ Tech Stack
 
 **Languages:**  
-`Java` `Shell` `Perl` `SQL` `VBA`
+`Java` `Python` `Shell` `Perl` `SQL` `VBA`
 
 **Platforms & OS:**  
 `Linux` `OpenSuSE` `OpenWrt` `VMware` `ARM` `x86`
@@ -97,10 +97,8 @@ I specialize in solving complex, multi-layer problems in constrained, high-press
 ---
 
 ## 📫 Contact
-- **Email:** yourname@example.com  
+- **Email:**   pangoutwise@gmail.com
 - **Location:** Open to remote / relocation  
-- **LinkedIn:** (optional, leave blank if unused)
-
 ---
 
 ## ⚡ Fun Fact
