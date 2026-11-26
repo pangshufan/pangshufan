@@ -1,106 +1,67 @@
-# 👋 Hi, I’m pangshufan
+# 👋 Hi, I’m Shufan Pang (`pangshufan`)
 
-**Senior Systems & Platform Engineer | IoT Architecture | Linux/Kernel | Observability | Telecom Systems | ARM/Linux**
+**Senior Platform & Systems Architect | Geospatial & Agentic Infrastructure | IoT Connectivity & Simulation | Deep-Dive Troubleshooting**
 
-I am a systems-focused engineer with 16+ years of experience designing, optimizing, and delivering mission-critical platforms across IoT, telecom, finance, and large enterprise environments. My work spans high-concurrency system architecture, Linux internals, distributed infrastructure, observability engineering, database recovery, and cross-platform deployment (ARM/x86).
+I am a systems-first architect and problem solver with **16+ years** of experience designing, rescuing, and operating mission-critical platforms across **Earth Observation (Remote Sensing), Industrial IoT, Telecom, and Enterprise Data Infrastructure**.
 
-I specialize in solving complex, multi-layer problems in constrained, high-pressure environments where tools may be limited and system reliability is critical.
+My core strength lies at the intersection of **distributed control planes, binary/network protocol engineering, Linux/OS internals, and zero-trust data pipelines**—especially in air-gapped, resource-constrained, or high-pressure field environments where standard playbooks fail and end-to-end ownership is non-negotiable.
 
----
-
-## 🔧 Core Competencies
-
-### **Systems & Platform Engineering**
-- IoT high-concurrency architecture (20,000+ devices)
-- Linux kernel upgrades, tuning, debugging  
-- Distributed systems & private cloud deployments  
-- ARM/x86 cross-platform build & migration  
-- Oracle RAC, MySQL (file-level recovery), PostgreSQL  
-
-### **Observability & Reliability**
-- End-to-end monitoring system design  
-- Shell/Java-based lightweight observability platform  
-- Trend analysis, anomaly detection, performance debugging  
-- Real-time notification & ChatOps automation  
-
-### **Networking & Telecom**
-- OLT/ONT/DSLAM integration  
-- End-to-end broadband/voice/IPTV activation  
-- SIP, multicast IPTV, network traffic modeling  
-- Datacenter topology, VLAN, bonding, SAN/HBA  
-
-### **Data Engineering**
-- ETL pipeline design under restricted environments  
-- High-security financial system migrations (ICBC)  
-- VBA-based automated data transformation  
-- Excel-based automated reporting & visualization  
-
-### **DevOps & Infrastructure**
-- Offline build environments (Redis, Nginx, Tesseract OCR, LibreOffice)  
-- Disaster recovery in air-gapped/private cloud environments  
-- OpenWrt cross-architecture environment reconstruction  
+📍 **Open to Relocation (Visa Sponsorship) & Global Remote** · 📫 [pangoutwise@gmail.com](mailto:pangoutwise@gmail.com)
 
 ---
 
-## 🌍 International Project Experience
-- **Thailand** — Telecom service activation environment; customer acceptance & staff training  
-- **Indonesia** — Performance optimization of Perl data collection system (100x improvement)  
-- **Sri Lanka** — Multi-system deployment, optimization, and troubleshooting  
-- **Lhasa (Tibet)** — Oracle RAC deployment under high-altitude, low-oxygen conditions  
+## 🏗️ Signature Platform Architectures
+
+### 1. Intelligent Remote Sensing & Zero-Trust Agentic Platform
+Architected a four-plane geospatial intelligence platform unifying PB-scale satellite imagery processing, OGC publishing, and enterprise LLM tool orchestration:
+- **Cloud-Native Geospatial Data Lake:** Built around **STAC v1.0.0 (`pgstac`)**, **Cloud-Optimized GeoTIFF (COG)** HTTP Range streaming with client-side WebGL rendering, **PostGIS**, **GeoServer**, and **SeaweedFS/S3**—supporting optical (Sentinel-2, Himawari-9 AHI) and SAR (NISAR, ALOS-2) pipelines.
+- **Zero-Trust Credential Isolation for AI Agents:** Eliminated credential leakage risks in LLM prompts/tool calls by designing a **Java 21 / Spring Cloud Resource Grant Center** that issues short-lived, `RS256`-signed JWS capability packages (`STS` tokens, scoped DB/GeoServer grants), paired with 8 client-side pre-flight policy checks and strict outbound `host:port` SSRF allowlists.
+- **Long-Running Compute State Machine (`WAITING_CREDENTIALS`):** Solved the mismatch between short-lived security tokens and multi-hour heavy raster jobs via non-destructive job suspension and automated background grant renewal/resumption.
+- **Context-Bounded Agent SDK & Immutable Lineage:** Early adopter of **MCP (Model Context Protocol)** patterns; engineered a zero-native-dependency agent SDK using semantic skill routing (capping active tool schemas per turn and cutting async polling payloads by **>90%**) alongside tamper-evident **SHA-256 S3 metadata lineage DAGs**.
+
+### 2. High-Concurrency IoT Connectivity & Fleet Simulation (`IoT Studio`)
+End-to-end engineering from carrier/enterprise device ingestion to deterministic protocol simulation:
+- **20,000+ Device Burst Governance (<3s SLA):** Re-architected gateway binary protocol parsing, tuned Linux kernel TCP/FD queues, and corrected Nginx L4 load-balancing local-bias weights to absorb synchronized hourly reporting bursts—achieving years of **zero-touch production operation** and isolating third-party RF chipset defects via behavioral packet analysis.
+- **IoT Access Architecture (Patent Application):** Distilled field bottlenecks from massive heterogeneous device onboarding and connection scheduling into a formal invention disclosure / patent application.
+- **`IoT Studio` Multi-Protocol Fleet Simulator:** Designed a desktop simulation workbench supporting **TCP/TLS, UDP, MQTT 3.1.1/5, HTTP/HTTPS, and CoAP**, decoupled from version-pinned codec plugins running in isolated subprocesses. Enforces production-grade semantics: **idempotent retries** (preserving request ID, sequence, timestamp, and nonce), non-blocking full-duplex auto-replies, and four-stage delivery telemetry (transport write vs. ACK match vs. business acceptance vs. logical completion).
+- **Hardware Protocol Reverse Engineering ([`ar844-client`](https://github.com/pangshufan/ar844-client) / [`ar844-usb-driver`](https://github.com/pangshufan/ar844-usb-driver)):** Captured and reverse-engineered undocumented industrial USB HID sound-level meter protocols via Wireshark into a cross-platform desktop acquisition & acoustic analytics suite (P10/L90 noise-floor windowing, udev rules, automated Windows/Linux/macOS CI).
 
 ---
 
-## 🚀 Selected High-Impact Projects
+## 🔥 Selected War Stories: Deep-Dive Troubleshooting & Global Delivery
 
-### **IoT Platform Stabilization (20,000+ devices)**
-- Redesigned Netty-based pipeline; optimized binary protocol parsing  
-- Eliminated data loss caused by retry storms  
-- Identified faulty communication chip vendor through behavioral log analysis  
-
-### **Lightweight Observability System (Shell + Java + Excel)**
-- Built complete monitoring & visualization suite without external tools  
-- Outperformed customer’s commercial monitoring platform  
-- Detected disk I/O anomalies & long-term memory leak in core processes  
-
-### **Private Cloud Disaster Recovery**
-- Reconstructed entire environment after VM loss  
-- Restored MySQL via file-level recovery  
-- Fully recovered operational services in hours  
-
-### **Restricted Banking Environment ETL (ICBC)**
-- Built VBA-based ETL engine inside WPS (no software installation allowed)  
-- Completed migration + validation in under 2 hours  
-
-### **Telecom End-to-End Business Activation (Thailand)**
-- Built broadband/voice/IPTV demo environment with SIP server & multicast IPTV  
-- Enabled customer to visually verify activation/cancellation flows  
+- **4 Hours vs. 1 Year — Cross-Layer Latency Root Cause:** Resolved a year-long intermittent 30s database connection stall on ARM Linux (`Oracle RAC` / `JDBC`) in 4 hours by isolating a minimal reproducer, ruling out packet loss via `tcpdump`, and pinpointing `Inet6AddressImpl` IPv6 DNS resolution blocking via `jstack`.
+- **100x Storage I/O Reversal:** Overturned a vendor's costly CPU-expansion recommendation on a stalled data platform by proving random disk I/O saturation (`iostat -x` `%util > 90%`) and leading an SSD tier migration that delivered **100x throughput** at a fraction of the budget.
+- **Surgical Bare-Metal & Database Disaster Recovery:** Reconstructed production environments in hours after catastrophic private-cloud system-disk loss, performing file-level **MySQL InnoDB** tablespace and redo-log recovery with **zero data loss** without snapshots.
+- **Cross-Border Telecom Rescue (Thailand, Indonesia, Sri Lanka):**
+  - Rescued a delayed flagship ISP **FTTH / SIP Voice / Multicast IPTV** rollout in Thailand; halted an un-STP'd L2 broadcast storm within 5 minutes and delivered automated OSS/BSS provisioning (`TL1/XML`).
+  - Broke multi-team deadlocks by diagnosing L7 HTTP WAF false-positives dropping `MQTT` handshakes and `SNMP` PDU fragmentation exceeding device MTU limits; achieved **100x speedup** on legacy carrier collection pipelines via algorithmic hash-index refactoring.
+  - Authored pixel-accurate physical rack & cabling "digital twins" ([`Server_Topo-DigitalTwin-like.pdf`](resources/Server_Topo-DigitalTwin-like.pdf)) to bridge spoken-language barriers, enabling local field crews to wire complex server/SAN/switch/F5 topologies with **zero communication friction and zero cabling errors**.
+- **Pragmatic ROI in Constrained Environments:** Built offline ARM RPM software supply chains for air-gapped networks, zero-install in-memory ETL engines for locked-down banking migrations (ICBC, **12x faster**), and CPU-only `FastText + AutoML` microservices where GPUs were unavailable.
 
 ---
 
-## 🛠️ Tech Stack
+## 📂 Selected Public Repositories
 
-**Languages:**  
-`Java` `Python` `Shell` `Perl` `SQL` `VBA`
+> **Engineering Workflow Note:** My native foundation is **systems architecture, Java/Spring microservices, SQL/databases, Linux internals, and network protocols**. For cross-platform desktop utilities, host agents, and polyglot SDKs (`Python` / `Go`), I practice **spec-driven, AI-augmented engineering**—authoring strict protocol state machines, memory/security bounds, and edge-case test contracts while leveraging AI to accelerate multi-language implementation and CI packaging.
 
-**Platforms & OS:**  
-`Linux` `OpenSuSE` `OpenWrt` `VMware` `ARM` `x86`
-
-**Databases:**  
-`Oracle RAC` `MySQL` `PostgreSQL`
-
-**Infrastructure:**  
-`Nginx` `Redis` `LibreOffice` `Tesseract` `SAN/HBA` `VLAN`
-
-**Tools:**  
-`Git` `Excel Automation` `SFTP Automation` `Prometheus-style Observability (Custom)`
+- **[`ar844-client`](https://github.com/pangshufan/ar844-client)** & **[`ar844-usb-driver`](https://github.com/pangshufan/ar844-usb-driver)** — Wireshark reverse-engineered USB HID driver and cross-platform desktop acoustic monitor (SQLite time-windowed percentiles, HID timeout recovery, multi-OS GitHub Actions).
+- **[`file-sync-server-sftp`](https://github.com/pangshufan/file-sync-server-sftp)** — Multi-tenant SFTP server with a custom v1/v2 incremental file-sync protocol (`AsyncSSH` + `PySide6`) and companion **Java client SDK**.
+- **[`linux-minitor`](https://github.com/pangshufan/linux-minitor)** — Outbound-only Linux (`/proc`, `/sys`, `cgroups`) & Windows host observability system over **gRPC + mTLS** with built-in PKI certificate issuance and `SQLite WAL` / `PostgreSQL` storage.
+- **[`local-communication`](https://github.com/pangshufan/local-communication)** — Zero-broadcast, stealth-by-default LAN messaging & zero-copy large-file streaming tool featuring `Ed25519`/HMAC pairing and strict memory-watermarked ring buffers.
 
 ---
 
-## 📫 Contact
-- **Email:**   pangoutwise@gmail.com
-- **Location:** Open to remote / relocation  
+## 🛠️ Technical Capabilities
+
+- **Architecture & Control Plane (Native Core):** `Java (8–21)` · `Spring Boot / Spring Cloud` · `REST / gRPC / Protobuf` · `Zero-Trust Auth (JWS / RS256 / mTLS / STS / OS Keyring)` · `System & Protocol State Machines`
+- **Geospatial & Data Engineering:** `STAC (pgstac)` · `COG` · `GDAL / PROJ / Rasterio` · `PostGIS` · `GeoServer (WMS/WFS)` · `Oracle RAC` · `MySQL (InnoDB Internals)` · `PostgreSQL` · `S3 / SeaweedFS` · `Kafka` · `Redis`
+- **IoT, Networking & Linux Systems:** `Linux Internals & Kernel Tuning (x86 / ARM / OpenWrt)` · `TCP/IP` · `MQTT 3.1.1/5` · `CoAP` · `USB HID` · `Wireshark / tcpdump` · `OLT/ONT / SIP / Multicast IPTV / VLAN / SAN`
+- **AI-Augmented & Pragmatic AI Engineering:** `MCP & Agent Skill Routing` · `Spec-Driven Polyglot Prototyping (Python / Go / PySide6)` · `Lightweight MLOps (Conda-Pack / FastText)` · `Shell / SQL / PL/SQL`
+
 ---
 
-## ⚡ Fun Fact
-I have deployed Oracle RAC at high altitude (Lhasa), built an observability platform in Excel, and reconstructed OpenWrt environments without access to the original hardware.
+## 🌌 Beyond Engineering: Systems Thinking & Hard Sci-Fi
 
+- **Visual Engineering Across Languages:** See [`Server_Topo-DigitalTwin-like.pdf`](resources/Server_Topo-DigitalTwin-like.pdf) — a pixel-level physical server, disk-array, switch, and F5 cabling blueprint created to achieve zero-error datacenter deployment across language barriers.
+- ***“Seeds of Life: Planetary Self-Operations”* (Hard Sci-Fi Worldbuilding):** Author of a speculative systems-engineering thought experiment modeling biosphere evolution and industrial civilization as a **zero-OpEx, self-healing planetary infrastructure** governed by open-ended optimization, fault tolerance, objective misalignment risks, and long-horizon ROI.
